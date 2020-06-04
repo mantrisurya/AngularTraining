@@ -1,0 +1,18 @@
+<p>csssstyle works!</p>
+<br />
+<div [@slide]="redVal ? 'changed' : 'open'" class="rstyle">ngStyle</div>
+<label for="color">Red</label>
+<input [(ngModel)]="redVal" type="range" name="color" min="0" max="1">
+{{redVal ? afterBg : red}}
+<br />
+<br />
+<div [@slide]="greenVal ? 'changed' : 'open'" class="gstyle">ngStyle</div>
+<label for="color">Green</label>
+<input type="range" [(ngModel)]="greenVal" name="color" min="0" max="1">
+{{greenVal ? afterBg : green}}
+<br />
+<br />
+<div [@slide]="blueVal ? 'changed' : 'open'" class="bstyle">ngStyle</div>
+<label for="color">Blue</label>
+<input [(ngModel)]="blueVal" type="range" name="color" min="0" max="1">
+{{blueVal ? afterBg : blue}}
